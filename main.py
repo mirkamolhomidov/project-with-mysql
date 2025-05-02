@@ -35,6 +35,5 @@ def update(id):
     if len(tasks) > id and id > -1 and len(tasks):
         tasks[id] = request.form.get('new_task')
     return redirect('/')
-
 if __name__ == "__main__":
     app.run(debug=True)
